@@ -1,0 +1,252 @@
+.navbar {
+    position: sticky;
+    background-color: rgb(55, 55, 55);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+/* start of search button */
+
+form {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover {
+    width: 280px;
+    cursor: pointer;
+}
+
+form:hover input {
+    display: block;
+}
+
+form:hover .fa {
+    background: #07051a;
+    color: white;
+}
+
+/* end of search button */
+
+/* start of cart */
+
+.btn {
+    background-color: gold;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ff0000;
+    text-decoration: none;
+    background-color: cornsilk;
+}
+
+/* #added-item-list > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+.dropdown-menu {
+    margin: 0;
+}
+
+/* end of cart */
+
+/* start of sorting */
+
+#select {
+    background-color: gold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 10px 0px 10px;
+}
+
+#sort-menu:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* end of sorting */
+
+/* start of item list */
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#itemList {
+    margin: auto;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.col-sm-2 {
+    background-color: cornsilk;
+}
+
+.card {
+    margin: 10px 10px 15px 10px;
+    max-width: 269px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: red;
+    border: 1px outset red;
+    padding: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+    box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0.5);
+}
+
+.card img:hover {}
+
+.card-title {
+    margin-bottom: 5px;
+}
+
+.card-body {
+    padding: 8px 8px 15px 8px;
+    max-height: 61px;
+}
+
+.list-group {
+    padding-bottom: 40px;
+    min-height: 133px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0 5px;
+    background-color: #fff;
+    border: none;
+}
+
+.buy {
+    background-color: gold;
+    color: rgb(55, 55, 55);
+    margin: 15px;
+    font-weight: bold;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px outset red;
+}
+
+/* end of item list */
+
+/* start of footer */
+
+.footer-content {
+    background-color: rgb(55, 55, 55);
+    margin: auto;
+    padding: 5px;
+    color: gold;
+    left: 0;
+    bottom: 0;
+    padding-left: 17%;
+}
+
+.footer-content em {
+    font-size: small;
+}
+
+.footer-content img {
+    float: right;
+    padding: 15px 19.7% 0px 15px;
+    width: 35%;
+}
+
+.page-item {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.page-item.active .page-link {
+    color: red;
+    background-color: gold;
+    border: 1px solid red;
+}
+
+.page-link {
+    color: rgb(55, 55, 55);
+    background-color: white;
+    border: 1px solid red;
+}
+
+.page-link:hover {
+    color: red;
+    background-color: rgb(255, 236, 128);
+    border: 1px solid red;
+}
+
+.pagination .justify-content-center {
+    margin: 30px 0;
+}
+
+.page-item.disabled .page-link {
+    color: #d1d1d2;
+    pointer-events: none;
+    cursor: auto;
+    border: 1px solid red;
+}
+
+/* end of footer */

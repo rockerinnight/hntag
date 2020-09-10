@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="thanh-toan.css">
+    <!-- <link rel="stylesheet" href="gio-hang.css"> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <a class="navbar-brand" href="danh-sach-mon.html">
+            <img src="images/hntag-logo.png" style="width:36px; margin-left: 32px;" alt=" HNTAG?">
+        </a>
+        <!-- <form autocomplete="off">
+            <input type="search" placeholder="Hà Nội Thì Ăn Gì?" id="key-word">
+            <i id="search-button" onclick="itemSearch()" class="fa fa-search"></i>
+        </form> -->
+        <div id="cart" class="dropdown">
+            <a href="gio-hang.html"><button id="cart-button" type="button" class="btn" data-toggle=""
+                    title="Lựa món gì rồi đó?">
+                    Giỏ hàng
+                </button></a>
+            <div id="added-item-list" class="dropdown-menu dropdown-menu-right">
+                <!-- added items list -->
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <!--start of main content -->
+        <div class="col-sm-8" style="min-height: 410px;">
+            <h4 style="padding: 10px">Thanh toán</h4>
+            <div style="">
+                <form>
+                    Họ và Tên:<br>
+                    <input type="text" name="name"><br>
+                    Số điện thoại:<br>
+                    <input type="number" name="phone-number"><br>
+                    Địa chỉ:<br>
+                    <input type="text" name="address"><br>
+                    <input type="button" onclick="pay()" value="Submit form">
+                </form>
+            </div>
+        </div>
+        <!--end of main content -->
+        <div class="col-sm-2"></div>
+    </div>
+    <!-- start of footer -->
+    <footer>
+        <div class="footer-content">
+            <h4>Thông tin liên hệ</h4>
+            <p>Địa chỉ: <em>Số 22 Thành Công, Q. Ba Đình, Hà Nội</em></p>
+            <p>SĐT: <em>0396 438 337</em></p>
+            <p>Email: <em>hanoithiangi@gmail.com</em></p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Enter button to click -->
+    <!-- <script type="text/javascript">
+        let input = document.getElementById("key-word");
+        input.addEventListener("keypress", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("search-button").click();
+            }
+        });
+    </script> -->
+    <script src="data-mon.js"></script>
+    <script src="thanh-toan.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
